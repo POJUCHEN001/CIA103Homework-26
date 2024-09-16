@@ -27,6 +27,7 @@ public class TrainTest {
 //		• 請寫一隻程式，能印出不重複的Train物件
 		System.out.println("***印出不重複的Train物件***");
 		
+		//HashSet方法，使加入元素不重複
 		Set<Train> set = new HashSet<Train>();
 		set.add(t1);
 		set.add(t2);
@@ -37,27 +38,41 @@ public class TrainTest {
 		set.add(t7);
 		
 		for(Train train : set) {
-			train.show();
+			train.showInfo();
 		}
 		System.out.println("=============================================");
 		
 //		• 請寫一隻程式，讓Train物件印出時，能以班次編號由大到小印出
 		System.out.println("***讓Train物件印出時，能以班次編號由大到小印出***");
 		
-		Set<Train> set2 = new TreeSet<Train>();
-		set2.add(t1);
-		set2.add(t2);
-		set2.add(t3);
-		set2.add(t4);
-		set2.add(t5);
-		set2.add(t6);
-		set2.add(t7);
+		Set<Train> sortedSet = new TreeSet<Train>();
+		sortedSet.add(t1);
+		sortedSet.add(t2);
+		sortedSet.add(t3);
+		sortedSet.add(t4);
+		sortedSet.add(t5);
+		sortedSet.add(t6);
+		sortedSet.add(t7);
 		
-		for(Train train : set2) {
-			train.show();
+		for(Train train : sortedSet) {
+			train.showInfo();
 		}
-		
+		System.out.println("=============================================");
 //		• 承上，不僅能讓班次編號由大排到小印出， 還可以不重複印出Train物件
+		
+		System.out.println("***班次編號由大排到小印出， 且不重複印出Train物件***");
+		Set<Train> set3 = new TreeSet<Train>();
+		set3.add(t1);
+		set3.add(t2);
+		set3.add(t3);
+		set3.add(t4);
+		set3.add(t5);
+		set3.add(t6);
+		set3.add(t7);
+		
+		for(Train train : set3) {
+			train.showInfo();
+		}
 		
 	}
 

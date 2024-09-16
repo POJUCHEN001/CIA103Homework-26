@@ -2,6 +2,7 @@ package hw8;
 
 import java.util.Objects;
 
+
 public class Train implements Comparable<Train> {
 //	請設計一個Train類別，並包含以下屬性：
 //	- 班次number，型別為int - 車種type，型別為String - 出發地start，型別為String
@@ -12,10 +13,12 @@ public class Train implements Comparable<Train> {
 	private String dest;
 	private double price;
 	
+	//無參數建構子
 	public Train() {
 		
 	}
 	
+	//有參數建構子
 	public Train(int number, String type, String start, String dest, double price) {
 		this.number = number;
 		this.type = type;
@@ -68,7 +71,7 @@ public class Train implements Comparable<Train> {
 		this.price = price;
 	}
 	
-	public void show() {
+	public void showInfo() {
 		System.out.println("班次：" + number + " 車種：" + type + " 起站：" + start + " 迄站：" + dest + " 票價：" + price);
 	}
 

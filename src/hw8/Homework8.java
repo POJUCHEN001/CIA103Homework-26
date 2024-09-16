@@ -37,6 +37,7 @@ public class Homework8 {
 			System.out.println(iterator.next());
 		
 		System.out.println("方法二：傳統for");
+		
 		//方法二：傳統for
 		for (int i = 0; i < list.size(); i++) {
 			Object obj = list.get(i);
